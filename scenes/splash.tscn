@@ -1,0 +1,64 @@
+[gd_scene load_steps=5 format=3 uid="uid://dwhqtdgh0iegx"]
+
+[ext_resource type="Script" uid="uid://cmy0xdqeoyp8k" path="res://scenes/splash.gd" id="1_10vqf"]
+[ext_resource type="Texture2D" uid="uid://bimvibulkx7v7" path="res://assets/bungirl.png" id="2_10vqf"]
+[ext_resource type="Texture2D" uid="uid://i8x7o5t13pid" path="res://assets/loadbarunfil.png" id="3_5svwm"]
+[ext_resource type="Texture2D" uid="uid://rmw22lu30iok" path="res://assets/loadbarfil.png" id="4_31efs"]
+
+[node name="splash" type="Control"]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_10vqf")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="icon" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("2_10vqf")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 576.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+value = 50.0
+texture_under = ExtResource("3_5svwm")
+texture_progress = ExtResource("4_31efs")
+metadata/_edit_use_anchors_ = true
